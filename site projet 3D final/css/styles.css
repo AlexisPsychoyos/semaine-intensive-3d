@@ -1,0 +1,348 @@
+/*-------------Page accueil-----------*/
+body{
+    overflow: hidden;
+    background-color: black;
+}
+.traittop{
+    background-color: black;
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    z-index: 100;
+}
+.traitbas{
+    background-color: black;
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding:0;
+}
+.backg{
+    background: url(../img/fondvoit.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    top: 31px;
+    position: fixed;
+    width: 100%;
+    height: 85%;
+    right: 0px;
+    z-index: 0;
+}
+.profile{
+    position: fixed;
+    top: 80px;
+    left: 20px;
+}
+.insigne{
+    width: 200px;
+    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    cursor: pointer;
+}
+.profile:hover{
+    opacity: 0.9;
+}
+.actu{
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    left: 40px;
+    bottom: 0;
+    margin-bottom: 130px;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    cursor: pointer;
+}
+.actu2{
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    left: 40px;
+    bottom: 0;
+    margin-bottom: 130px;
+    cursor: pointer;
+}
+.act{
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    font-size: 25px;
+    color: #ffedae;
+    top: 5px;
+    font-family: 'postmaster';
+}
+.info{
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    left: 20px;
+    top: 35px;
+    overflow: scroll;
+}
+.txt{
+    color: #ffedae;
+    display: none;
+    font-family: 'proxima nova condensed';
+}
+
+.cotdroit{
+    position: absolute;
+    width: 45px;
+
+}
+.cotgau{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45px;
+}
+
+.barrelat{
+    background-color: #292f33;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+.rank{
+    position: absolute;
+    width: 180px;
+    top: 40px;
+    height: 50%;
+    z-index: 4;
+}
+.titreR{
+    position: absolute;
+    top: 35px;
+    text-align: center;
+    width: 180px;
+    font-size: 25px;
+    color: #ffedae;
+    font-family: 'postmaster';
+}
+.numero1{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 39px;
+    top: 75px;
+
+}
+.numero2{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    top: 124px;
+}
+.numero3{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    top: 173px;
+}
+.numero4{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    top: 222px;
+}
+.numero5{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    top: 272px;
+}
+.orn{
+    position: absolute;
+    left: 0;
+    width: 270px;
+}
+.orn:hover{
+    background-color: white;
+}
+.more{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    top: 322px;
+}
+.more:hover{
+    background-color: white;
+    opacity: 0.7;
+}
+.plus{
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    width: 20px;
+}
+.see{
+    position: absolute;
+    font-size: 15px;
+    top: 11px;
+    left: 80px;
+    color: #999999;
+    font-family: 'proxima nova condensed';
+    cursor: pointer;
+}
+.twitter{
+    position: absolute;
+    top: 399px;
+    right: 0;
+}
+
+.bas{
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+    z-index: 102;
+    bottom: 0;
+    margin-bottom: 4px;
+    left: 50%;
+}
+.cotbas{
+    width: 45px;
+}
+.map{
+    background-color: #2D2D2D;
+    width: 75%;
+    height: 60%;
+    position: absolute;
+    left: 12%;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    cursor: pointer;
+    top: 800px;
+    border-radius: 5px;
+}
+.circuit{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+}
+a.tooltips {
+    position: relative;
+    display: inline;
+}
+a.tooltips span {
+    position: absolute;
+    width:200px;
+    color: #FFFFFF;
+    background: #2D2D2D;
+    height: 100px;
+    line-height: 20px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+    left:-200px;
+}
+a.tooltips span p {
+    font-size: 10px;
+    margin-top: 2px;
+}
+a.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 102%;
+    margin-top: 4px;
+    width: 5px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #2D2D2D;
+}
+a:hover.tooltips span {
+    visibility: visible;
+    right: 100%;
+    margin-top: -30px;
+    margin-right: 15px;
+    z-index: 999;
+}
+.icon{
+    width: 20px;
+    margin-top: 10px;
+}
+.but{
+    background-color: #ffedae;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.but:hover{
+    background-color: #999999;
+}
+.pseudo{
+    position: absolute;
+    color: #2D2D2D;
+    top: 60px;
+    left:79px;
+    font-family: "proxima nova condensed";
+}
+.rang{
+    position: absolute;
+    color: #2D2D2D;
+    top: 83px;
+    left:68px;
+    font-family: "postmaster";
+    font-size: 14px;
+}
+.imgactu{
+    width: 200px;
+}
+.beat{
+    position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("../img/calandre.png");
+    z-index:20000;
+    width: 18.3%;
+    height: 60px;
+    left:40.3%;
+    top:585px;
+}
+.em{
+    position: absolute;
+    font-family: "postmaster";
+    color:#ffedae ;
+    top:25px;
+    left:70px;
+}
+.em:hover{
+    -moz-box-shadow: 0px 0px 5px 0px white;
+    -webkit-box-shadow: 0px 0px 5px 0px white;
+    -o-box-shadow: 0px 0px 5px 0px white;
+    box-shadow: 0px 0px 5px 0px white;
+    cursor: pointer;
+}
+.fumer{
+    position: absolute;
+    z-index:3000;
+    left:40%;
+    top:400px;
+}
